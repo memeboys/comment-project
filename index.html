@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="main">
+    <form id="comment-form" class="comment-form">
+      <div class="comment-form__header">
+        <div class="header">
+          <input name="name" type="text" placeholder="Имя" minlength="2" required>
+          <input class="date" name="date" type="date">
+        </div>
+        <button class="header-button" type="submit">Отправить</button>
+      </div>
+      <textarea name="textarea" class="comment-form__textarea" placeholder="Оставьте комментарий..." cols="30" rows="10"
+        minlength="5" required></textarea>
+    </form>
+    <div id="comment-list" class="comment-list"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
